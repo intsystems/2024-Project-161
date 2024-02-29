@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage{arxiv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english, russian]{babel}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{doi}
+
+
+
+\title{Методы малоранговых разложений в распределенном и федеративном обучении}
+
+\author{ Ребриков Алексей \\
+	\texttt{rebrikov.av@phystech.edu} \\
+	%% examples of more authors
+	\And
+	Зыль Александр\\
+	% \texttt{beznosikov.an@phystech.edu} \\
+	\And 
+	Безносиков Александр\\
+	\texttt{beznosikov.an@phystech.edu} \\
+	%% \AND
+	%% Coauthor \\
+	%% Affiliation \\
+	%% Address \\
+	%% \texttt{email} \\
+	%% \And
+	%% Coauthor \\
+	%% Affiliation \\
+	%% Address \\
+	%% \texttt{email} \\
+	%% \And
+	%% Coauthor \\
+	%% Affiliation \\
+	%% Address \\
+	%% \texttt{email} \\
+}
+\date{}
+\renewcommand{\undertitle}{}
+
+\hypersetup{
+pdftitle={Методы малоранговых разложений в распределенном и федеративном обучении},
+pdfsubject={Малоранговые разложения},
+pdfauthor={Ребриков~А.В., Безносиков~А.Н., Зыль~А.В.},
+pdfkeywords={сжатие информации, малоранговые разложения, распределенное обучение, федеративное обучение},
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	Подходы распределенного и федеративного обучения становятся все более популярными в обучении современных SOTA моделей машинного обучения. При этом на первый план выходит вопрос организации эффективных коммуникаций, так как процесс передачи информации занимает слишком много времени даже в случае кластерных вычислений. Из-за этого может теряться смысл в распределении/распараллеливании процесса обучения. Одной из ключевой техник  борьбы с коммуникационными затратами является использование сжатий передаваемой информации. На данный момент в литературе предлагаются различные техники сжатия (\citep{beznosikov2023biased}, \citep{alistarh2017qsgd}, \citep{horvoth2022natural}), но потенциал в этом вопросе явно не исчерпан. В частности, довольно большой потенциал кроется в малоранговых разложениях \citep{Gundersen2019RSVD}. В рамках проекта предлагается сконструировать операторы сжатия на основе данных разложений и встроить в методы распределенной оптимизации \citep{richtarik2021ef21}.
+\end{abstract}
+
+
+\keywords{сжатие информации \and малоранговые разложения \and распределенное обучение \and федеративное обучение}
+
+\section{Введение}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}
