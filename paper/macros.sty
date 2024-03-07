@@ -1,0 +1,384 @@
+\usepackage{graphicx} % more modern
+\usepackage{subcaption} 
+\usepackage{multirow}
+\usepackage{mathtools}
+\usepackage{relsize}
+\usepackage{url}
+\usepackage{nicefrac}
+\usepackage{xspace}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{bbm}
+
+
+
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{pifont}
+\newcommand{\cmark}{{\color{PineGreen}\ding{51}}}%
+\newcommand{\xmark}{{\color{BrickRed}\ding{55}}}%
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography 
+ 
+ % style
+% \usepackage{fullpage}
+\usepackage{layout}
+\usepackage{multirow}
+% \usepackage{cases}
+
+% ams
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb} % NOT COMATIBLE WITH svjour3
+
+% shaded theorems
+\usepackage{mdframed} 
+\usepackage{thmtools}
+
+\usepackage[font=normalsize, labelfont=bf]{caption}
+%\newtheoremstyle{selfdefined}
+%{12pt}% Space above
+%{12pt}% Space below
+%{}% Body font \itshape =italian style 
+%{}% Indent amount
+%{\bfseries}% Theorem head font
+%{}% Punctuation after theorem heading
+%{\newline}% Space after theorem heading, 0.5em => in gleicher zeile weiter
+%{}% Theorem head spec (can be left empty, meaning ‘normal’)
+
+
+
+
+% captions
+% \usepackage{caption}
+% \usepackage{subcaption}
+
+
+% graphics
+% \usepackage[dvips]{graphicx}
+% \usepackage{colordvi,epsfig}
+\usepackage{color}
+\usepackage{graphicx}
+\graphicspath{{plots/}}
+
+\usepackage{xcolor}
+
+% algorithms
+\usepackage{algorithm}
+%\usepackage{algorithmic}
+%\usepackage[noend]{algpseudocode}
+\usepackage{verbatim}
+\usepackage[algo2e]{algorithm2e} 
+
+
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% various
+% \usepackage{url}
+%\usepackage[cp1250]{inputenc}
+%\usepackage[T1]{fontenc}
+%\usepackage{calligra}
+%\usepackage[slovak]{babel}
+%\usepackage{charter}
+
+
+% What is this?
+% \PassOptionsToPackage{normalem}{ulem}
+% \usepackage{ulem}
+%% Change tracking with ulem
+
+\def\<{\left\langle}
+\def\>{\right\rangle}
+% \def\[{\left[}
+%\def\]{\right]}
+\def\({\left(}
+\def\){\right)}
+
+
+\def\supp{{\rm supp}}
+\newcommand{\sphere}{\mathbb{S}}
+
+\newcommand{\BR}{\text{BR}}
+\newcommand{\NC}{\cC_{\rm nat}}
+\newcommand{\NCd}{\cC_{\rm nat}^{\rm det}}
+\newcommand{\Qint}{\cC_{\rm int}}
+\newcommand{\ND}{\cD_{\rm nat}^{p,s}}
+\newcommand{\GD}{\cD_{\rm gen}^{\cC ,p,s}}
+\newcommand{\SD}{\cD_{\rm sta}^{p,s}}
+\newcommand{\SDs}[1]{\cD_{\rm sta}^{p,#1}}
+%\newcommand{\floor}[1]{\lfloor#1\rfloor}
+%\newcommand{\ceil}[1]{\lceil#1\rceil	}
+
+
+%\newcommand{\BR}{\text{BR}}
+%\newcommand{\NC}{\cC_{\rm nat}}
+%\newcommand{\Qint}{\cC_{\rm int}}
+%\newcommand{\ND}{\cD_{\rm nat}^{p,s}}
+%\newcommand{\GD}{\cD_{\rm gen}^{\cC ,p,s}}
+%\newcommand{\SD}{\cD_{\rm sta}^{p,s}}
+%\newcommand{\SDs}[1]{\cD_{\rm sta}^{p,#1}}
+
+
+\newcommand{\smartparagraph}[1]{\noindent {\bf #1}}
+
+\newcommand\tagthis{\addtocounter{equation}{1}\tag{\theequation}}
+
+\newcommand{\reals}{\mathbb{R}}
+\newcommand{\note}[1]{\textcolor{red}{#1}}
+\newcommand{\ip}[2]{\left\langle #1, #2\right\rangle}
+\newcommand{\nlsum}{\sum\nolimits}
+
+\DeclareMathOperator{\Ocal}{\mathcal{O}} 
+\DeclareMathOperator{\sign}{sign} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% BIBLIOGRAPHY
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[maxbibnames=99, maxcitenames=10,doi=false,isbn=false,url=false,backend=bibtex]{biblatex}
+%%\bibliography{SDA.bib}
+%\newcommand{\Ref}[1]{../ref/#1}
+%%\input{\Ref{biblatex_journal_def}}
+
+%%% Basic sets
+
+% caligraphic
+\newcommand{\cA}{{\cal A}}
+\newcommand{\cB}{{\cal B}}
+\newcommand{\cC}{{\cal C}}
+\newcommand{\cD}{{\cal D}}
+\newcommand{\cE}{{\cal E}}
+\newcommand{\cF}{{\cal F}}
+\newcommand{\cG}{{\cal G}}
+\newcommand{\cH}{{\cal H}}
+\newcommand{\cJ}{{\cal J}}
+\newcommand{\cK}{{\cal K}}
+\newcommand{\cL}{{\cal L}}
+\newcommand{\cM}{{\cal M}}
+\newcommand{\cN}{{\cal N}}
+\newcommand{\cO}{{\cal O}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\cQ}{{\cal Q}}
+\newcommand{\cR}{{\cal R}}
+\newcommand{\cS}{{\cal S}}
+\newcommand{\cT}{{\cal T}}
+\newcommand{\cU}{{\cal U}}
+\newcommand{\cV}{{\cal V}}
+\newcommand{\cX}{{\cal X}}
+\newcommand{\cY}{{\cal Y}}
+\newcommand{\cW}{{\cal W}}
+\newcommand{\cZ}{{\cal Z}}
+
+%
+\newcommand{\R}{\mathbb{R}} % reals
+% \newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\N}{\mathbb{N}} % Naturals
+% \newcommand{\U}{\mathbb{U}}
+
+
+% bold
+\newcommand{\bA}{{\bf A}}
+\newcommand{\bB}{{\bf B}}
+\newcommand{\bC}{{\bf C}}
+\newcommand{\bE}{{\bf E}}
+\newcommand{\bI}{{\bf I}}
+\newcommand{\bS}{{\bf S}}
+\newcommand{\bZ}{{\bf Z}}
+
+% red matrices
+%\newcommand{\mA}{{\color{red}\bf A}}
+%\newcommand{\mB}{{\color{red}\bf B}}
+%\newcommand{\mC}{{\color{red}\bf C}}
+%\newcommand{\mE}{{\color{red}\bf E}}
+%\newcommand{\mF}{{\color{red}\bf F}}
+%\newcommand{\mG}{{\color{red}\bf G}}
+%\newcommand{\mH}{{\color{red}\bf H}}
+%\newcommand{\mI}{{\color{red}\bf I}}
+%\newcommand{\mJ}{{\color{red}\bf J}}
+%\newcommand{\mK}{{\color{red}\bf K}}
+%\newcommand{\mL}{{\color{red}\bf L}}
+%\newcommand{\mM}{{\color{red}\bf M}}
+%\newcommand{\mN}{{\color{red}\bf N}}
+%\newcommand{\mO}{{\color{red}\bf O}}
+%\newcommand{\mP}{{\color{red}\bf P}}
+%\newcommand{\mQ}{{\color{red}\bf Q}}
+%\newcommand{\mR}{{\color{red}\bf R}}
+%\newcommand{\mS}{{\color{red}\bf S}}
+%\newcommand{\mT}{{\color{red}\bf T}}
+%\newcommand{\mU}{{\color{red}\bf U}}
+%\newcommand{\mV}{{\color{red}\bf V}}
+%\newcommand{\mW}{{\color{red}\bf W}}
+%\newcommand{\mX}{{\color{red}\bf X}}
+%\newcommand{\mY}{{\color{red}\bf Y}}
+%\newcommand{\mZ}{{\color{red}\bf Z}}
+
+% matrices
+\newcommand{\mA}{{\bf A}}
+\newcommand{\mB}{{\bf B}}
+\newcommand{\mC}{{\bf C}}
+\newcommand{\mD}{{\bf D}}
+
+\newcommand{\mE}{{\bf E}}
+\newcommand{\mF}{{\bf F}}
+\newcommand{\mG}{{\bf G}}
+\newcommand{\mH}{{\bf H}}
+\newcommand{\mI}{{\bf I}}
+\newcommand{\mJ}{{\bf J}}
+\newcommand{\mK}{{\bf K}}
+\newcommand{\mL}{{\bf L}}
+\newcommand{\mM}{{\bf M}}
+\newcommand{\mN}{{\bf N}}
+\newcommand{\mO}{{\bf O}}
+\newcommand{\mP}{{\bf P}}
+\newcommand{\mQ}{{\bf Q}}
+\newcommand{\mR}{{\bf R}}
+\newcommand{\mS}{{\bf S}}
+\newcommand{\mT}{{\bf T}}
+\newcommand{\mU}{{\bf U}}
+\newcommand{\mV}{{\bf V}}
+\newcommand{\mW}{{\bf W}}
+\newcommand{\mX}{{\bf X}}
+\newcommand{\mY}{{\bf Y}}
+\newcommand{\mZ}{{\bf Z}}
+\newcommand{\mLambda}{{\bf \Lambda}}
+
+\newcommand{\zeros}{{\bf 0}}
+\newcommand{\ones}{{\bf 1}}
+
+
+%\newcommand{\red}[1]{{\color{red} #1}}
+%\newcommand{\blank}[1]{\{#1\}}
+
+%\providecolor{added}{rgb}{0,0,1}
+%\providecolor{deleted}{rgb}{1,0,0}
+%\newcommand{\added}[1]{{\color{added}{}#1}}
+%\newcommand{\deleted}[1]{{\color{deleted}\sout{#1}}}
+%\newcommand{\ignore}[1]{}
+
+\newcommand{\mcnote}[1]{\todo[inline]{\textbf{Marco: }#1}}
+
+\newcommand{\YY}{\gamma}
+\newcommand{\XX}{\omega}
+
+
+\newcommand{\Sam}{S}  
+
+
+% basic
+%\newcommand{\eqdef}{\overset{\text{def}}{=}} 
+\newcommand{\eqdef}{\coloneqq}
+
+\newcommand{\st}{\;:\;} % such that
+\newcommand{\ve}[2]{\langle #1 ,  #2 \rangle} % inner
+\newcommand{\lin}[1]{\langle #1 \rangle} % inner product
+\newcommand{\dotprod}[1]{\left< #1\right>} % product
+\newcommand{\norm}[1]{\left\| #1 \right\|_2}      % norm 
+\newcommand{\onenorm}[1]{\left\| #1 \right\|_1}      % norm 
+\newcommand{\twonorm}[1]{\left\| #1 \right\|_2}      % norm 
+\newcommand{\threenorm}[1]{\left\| #1 \right\|_3}      % norm 
+
+\newcommand{\Elias}{\mathrm{Elias}}
+\newcommand{\Comp}{\mathrm{Code}}
+
+
+% sets
+\DeclareMathOperator{\card}{card}       % cardinality of a set
+\DeclareMathOperator{\diam}{diam}       % diameter of a set
+\DeclareMathOperator{\MVEE}{MVEE}       % minim volume enclosing ellipsoid of a set
+\DeclareMathOperator{\vol}{vol}         % volume of a set 
+
+% statistical
+%\DeclareMathOperator{\Exp}{\mathbf{E}} % expectation
+\DeclareMathOperator{\Cov}{Cov}         % covariance
+\DeclareMathOperator{\Var}{Var}         % variance
+\DeclareMathOperator{\Corr}{Corr}       % correlation
+% \DeclareMathOperator{\Prob}{Prob}
+% \newcommand{\Prob}{\mathbf{Prob}}
+
+
+% functions and operators
+\DeclareMathOperator{\signum}{sign}     % signum/sign of a scalar
+\DeclareMathOperator{\dom}{dom}         % domain
+\DeclareMathOperator{\epi}{epi}         % epigraph
+% \DeclareMathOperator{\Ker}{null}        % nullspace/kernel
+\DeclareMathOperator{\nullspace}{null}  % nullpsace
+% \DeclareMathOperator{\range}{range}     % range
+% \DeclareMathOperator{\Image}{Im}        % image
+\DeclareMathOperator{\argmin}{argmin}        % argmin
+\DeclareMathOperator{\prox}{prox}       % proximal operator      
+
+% topology
+\DeclareMathOperator{\interior}{int}    % interior
+\DeclareMathOperator{\ri}{rint}         % relative interior
+\DeclareMathOperator{\rint}{rint}       % relative interior
+\DeclareMathOperator{\bdry}{bdry}       % boundary
+\DeclareMathOperator{\cl}{cl}           % closure
+
+% vectors, matrices
+\DeclareMathOperator{\linspan}{span}
+\DeclareMathOperator{\linspace}{linspace}
+\DeclareMathOperator{\cone}{cone}
+\DeclareMathOperator{\traceOp}{tr}           % trace
+\DeclareMathOperator{\rank}{rank}       % rank
+\DeclareMathOperator{\conv}{conv}       % convex hull
+%\DeclareMathOperator{\Diag}{Diag}       % Diag(v) = diagonal matrix with v_i on the diagonal
+\DeclareMathOperator{\diag}{diag}       % diag(D) = the diagonal vector of matrix D
+\DeclareMathOperator{\Arg}{Arg}         % Argument
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+% operators with parentheses
+%\newcommand{\normB}[1]{\lVert#1\rVert}
+%\newcommand{\dotprodB}[1]{\left< #1\right>}
+%\newcommand{\trB}[1]{\mathbf{Tr}\left( #1\right)}
+\newcommand{\Diag}[1]{\mathbf{Diag}\left( #1\right)}
+\providecommand{\kernel}[1]{{\rm Null}\left( #1\right)}
+%\providecommand{\rankB}[1]{\mathbf{Rank}\left( #1\right)}
+\providecommand{\range}[1]{{\rm Range}\left( #1\right)}
+\providecommand{\span}[1]{{\rm Span}\left\{ #1\right\}}
+\providecommand{\trace}[1]{{\rm Trace}\left( #1\right)}
+%\providecommand{\projB}[2]{\mbox{proj}_{#1}^{#2}}
+
+\newcommand{\expSB}[2]{{ \mathbf{E}}_{#1}\left[#2\right] } % expectation with subscript
+\newcommand{\Exp}[1]{{{\rm E}}\left[#1\right] }    % expectation
+\newcommand{\ExpC}[1]{{{\rm E_C}}\left[#1\right] }
+\newcommand{\Expg}[1]{{{\rm E_{\nabla}}}\left[#1\right] }
+%\newcommand{\inner}[1]{\langle#1\rangle}
+\newcommand{\E}[1]{{\rm E}\left[#1\right] } 
+\newcommand{\Esimple}{{\rm E}} 
+\newcommand{\EE}[2]{{\rm E}_{#1}\left[#2\right] } 
+\newcommand{\ED}[1]{{\rm E}_{S\sim \cD}\left[#1\right] }
+\newcommand{\abs}[1]{| #1 |} 
+
+
+
+\newtheorem{assumption}{Assumption}
+
+
+\newcommand{\BlackBox}{\rule{1.5ex}{1.5ex}}  % end of proof
+\ifdefined\proof
+    \renewenvironment{proof}{\par\noindent{\bf Proof\ }}{\hfill\BlackBox\\[2mm]}
+\else
+    \newenvironment{proof}{\par\noindent{\bf Proof\ }}{\hfill\BlackBox\\[2mm]}
+\fi
+\newtheorem{example}{Example} 
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma} 
+\newtheorem{proposition}[theorem]{Proposition} 
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{axiom}[theorem]{Axiom}
